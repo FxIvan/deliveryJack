@@ -42,8 +42,73 @@ header nav ul li {
     display: none;
 }
 
+.container-header-dt nav ul{
+    margin-bottom: 0;
+}
 
+/* SECTION PRINCIPAL*/
+.section-principal{
+    text-align: center;
+    background-color: #817777;
+    margin: 0;
+    height: 45vh;
+}
+
+.section-principal h1{
+    font-size: 6rem;
+    position: relative;
+    top: 20%;
+    font-family: 'Crimson Text', serif;
+}
+
+.section-principal p{
+    position: relative;
+    top: 20%;
+    font-size: 2.5rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 1rem;
+}
+
+.section-nosotros{
+    padding-top: 1rem;
+}
+.section-nosotros .nosotros-texto img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.section-nosotros h2, .nosotros-equipo h2{
+    font-family: 'Crimson Text', serif;
+    padding-left: 10vh;
+    font-size: 2.2rem;
+    color: #884b35;
+}
+
+.section-nosotros .nosotros-texto{
+    margin-top: 1rem;
+}
+.nosotros-texto p{
+    font-family: 'Karla', sans-serif;
+    font-size: 1.3rem;
+}
+
+.nosotros-equipo h2{
+    margin: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.nosotros-equipo img{
+    width: 40%;
+}
+
+section .nosotros-equipo{
+    margin-top: 1rem;
+}
 @media only screen and (max-width:768px) {
+    h2{
+        font-size: 1rem;
+    }
     .container-header-dt {
         display: none;
     }
@@ -83,9 +148,32 @@ header nav ul li {
 
     .nav-mb {
         padding-top: 3vh;
+        z-index: 1;
     }
 
     .dropDownMenu li a{
         margin-top: 0.2rem;
+    }
+
+    .section-principal h1{
+        font-size: 8vh;
+    }
+    .section-principal p{
+        font-size: 1.5rem;
+
+    }
+    section .section-nosotros{
+        margin: 0;
+        margin-top: 3rem;
+    }
+    section .text-nosotros{
+        border-bottom: 1px solid #585858;
+        box-sizing: content-box;
+    }
+    section .section-nosotros h2{
+        padding: 0;
+    }
+    section .nosotros-equipo h2{
+        padding: 0;
     }
 }
